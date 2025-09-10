@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>RUDRA-SETU — Empowering Cadets for Community Impact</title>
+    <meta name="description" content="RUDRA-SETU — mobilizing NCC cadets for scalable, ethical community service." />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="site-header">
+        <div class="nav-wrap">
+            <div class="logo">
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2" y="2" width="60" height="60" rx="10" fill="none" stroke="rgba(255,255,255,0.08)" />
+                    <path d="M10 44 L22 22 L32 38 L42 18 L54 44" stroke="url(#g)" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                </svg>
+                <div>
+                    <div style="font-weight:800">RUDRA-SETU</div>
+                    <div style="font-size:12px;color:var(--muted);margin-top:2px">Unity • Discipline • Service</div>
+                </div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#pillars">Pillars</a>
+                <a href="#strategy">Strategy</a>
+                <a href="#impact">Impact</a>
+                <a href="#partners">Partners</a>
+                <a href="#contact" class="cta">Get Involved</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <canvas class="particle-canvas"></canvas>
+            <div class="hero-grid">
+                <div class="hero-head">
+                    <div class="eyebrow">NCC IDEA & INNOVATION COMPETITION 2025</div>
+                    <h1>RUDRA-SETU — Empowering Cadets for Integrated Community Impact</h1>
+                    <p class="lead">Bridging cadets' academic skills and verified training with meaningful community
+                        service —
+                        scalable, ethical, and accountable.</p>
+
+                    <div class="hero-ctas">
+                        <a class="cta" href="#pillars">Explore Pillars</a>
+                        <a class="ghost-btn" href="#contact">Join as Cadet</a>
+                    </div>
+
+                    <div style="margin-top:18px;display:flex;gap:12px">
+                        <div class="card-hero">
+                            <div style="display:flex;gap:12px;align-items:center">
+                                <div class="icon-badge">R</div>
+                                <div>
+                                    <div style="font-weight:800">Ready Cadets</div>
+                                    <div class="muted small">Skill-mapped & verified — training, readiness, and
+                                        role-matching.</div>
+                                </div>
+                            </div>
+                            <div style="display:flex;gap:10px;margin-top:14px">
+                                <div class="stat">
+                                    <div class="num">1,250+</div>
+                                    <div class="lbl">Cadets in pilot list</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="num">35</div>
+                                    <div class="lbl">Community partners</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside>
+                    <div class="card-hero aside-card">
+                        <div style="display:flex;justify-content:space-between;align-items:center">
+                            <div style="font-weight:800">Quick Actions</div>
+                            <div class="muted small">Status: Pilot Ready</div>
+                        </div>
+                        <div class="kv-list">
+                            <div><span>Registration</span><strong>Open</strong></div>
+                            <div><span>Training</span><strong>Modular</strong></div>
+                            <div><span>Monitoring</span><strong>Digital</strong></div>
+                        </div>
+                        <div class="btn-row">
+                            <button onclick="location.href='#contact'">Volunteer</button>
+                            <button class="ghost-btn" onclick="openModal('download')">Download Brief</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="about-grid">
+                <div>
+                    <h2>About RUDRA-SETU</h2>
+                    <p class="muted">RUDRA-SETU is designed to map NCC cadets' academic specializations to community
+                        roles —
+                        combining discipline, training and verified status to offer ethical, accountable public service.
+                    </p>
+                    <div class="about-cards">
+                        <div class="info-card">
+                            <strong>Core:</strong>
+                            <div class="muted small">Scalable • Ethical • Accountable • Community-first</div>
+                        </div>
+                        <div class="info-card">
+                            <strong>Pilot:</strong>
+                            <div class="muted small">Region-focused rollout with rigorous documentation and evaluation.
+                            </div>
+                        </div>
+                    </div>
+                    <p class="muted small">Cadets act as facilitators of information and immediate support, with clear
+                        escalation
+                        to professional services when required.</p>
+                </div>
+
+                <div class="about-side">
+                    <div class="info-card">
+                        <strong>Values</strong>
+                        <ul class="muted small">
+                            <li>Protection & trained action (Rudra)</li>
+                            <li>Bridging communities and institutions (Setu)</li>
+                            <li>Students as facilitators — not authorities</li>
+                            <li>Transparency, ethics & respect for privacy</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <strong>Ethics & Safety</strong>
+                        <p class="muted small">Mandatory ethical training, clear referral pathways, and multi-tiered
+                            monitoring
+                            ensure safety and accountability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PILLARS -->
+        <section id="pillars">
+            <h2>Service Pillars</h2>
+            <div class="pillars">
+                <div class="pillar" data-key="psyconnect" onclick="openModal('psyconnect')">
+                    <div class="pillar-header">
+                        <div class="pillar-icon">P</div>
+                        <div>
+                            <div class="title">PsyConnect</div>
+                            <div class="desc">Psychology & social work cadets — emotional first aid, elderly
+                                companionship, peer
+                                support</div>
+                        </div>
+                    </div>
+                    <div class="pill-action"><button class="ghost-btn">Details</button></div>
+                </div>
+
+                <div class="pillar" data-key="teachon" onclick="openModal('teachon')">
+                    <div class="pillar-header">
+                        <div class="pillar-icon">T</div>
+                        <div>
+                            <div class="title">TeachOn</div>
+                            <div class="desc">Education & STEM cadets — tutoring, dropout re-engagement, digital
+                                literacy</div>
+                        </div>
+                    </div>
+                    <div class="pill-action"><button class="ghost-btn">Details</button></div>
+                </div>
+
+                <div class="pillar" data-key="legalease" onclick="openModal('legalease')">
+                    <div class="pillar-header">
+                        <div class="pillar-icon">L</div>
+                        <div>
+                            <div class="title">LegalEase</div>
+                            <div class="desc">Law & public admin cadets — legal literacy, govt. scheme guidance &
+                                referral</div>
+                        </div>
+                    </div>
+                    <div class="pill-action"><button class="ghost-btn">Details</button></div>
+                </div>
+
+                <div class="pillar" data-key="sheshield" onclick="openModal('sheshield')">
+                    <div class="pillar-header">
+                        <div class="pillar-icon">S</div>
+                        <div>
+                            <div class="title">SheShield</div>
+                            <div class="desc">Female cadets — self-defence, safety awareness, peer mentoring, hygiene
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pill-action"><button class="ghost-btn">Details</button></div>
+                </div>
+
+                <div class="pillar" data-key="rapidrelief" onclick="openModal('rapidrelief')">
+                    <div class="pillar-header">
+                        <div class="pillar-icon">R</div>
+                        <div>
+                            <div class="title">RapidRelief</div>
+                            <div class="desc">All cadets — first aid, BLS, search & rescue basics, rapid response
+                                support</div>
+                        </div>
+                    </div>
+                    <div class="pill-action"><button class="ghost-btn">Details</button></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STRATEGY -->
+        <section id="strategy">
+            <h2>Implementation Roadmap</h2>
+            <div class="timeline" id="timeline">
+                <div class="step"><strong>1 — Registration</strong>
+                    <p class="muted">Skill & availability mapping on a digital platform.</p>
+                    <div class="more">
+                        <p>Cadets complete a verification profile.</p>
+                    </div>
+                </div>
+                <div class="step"><strong>2 — Micro-Training</strong>
+                    <p class="muted">Standardized modules + practical simulations.</p>
+                    <div class="more">
+                        <p>Short modular courses delivered by experts.</p>
+                    </div>
+                </div>
+                <div class="step"><strong>3 — Service Hours</strong>
+                    <p class="muted">Minimum hours + flexible schedule integration.</p>
+                    <div class="more">
+                        <p>Cadets commit to a minimum service threshold.</p>
+                    </div>
+                </div>
+                <div class="step"><strong>4 — Monitoring</strong>
+                    <p class="muted">On-ground supervisors + dashboard reporting.</p>
+                    <div class="more">
+                        <p>Multi-tier monitoring with dashboards.</p>
+                    </div>
+                </div>
+                <div class="step"><strong>5 — Recognition</strong>
+                    <p class="muted">Certificates, credits, awards.</p>
+                    <div class="more">
+                        <p>Certificates and awards for cadets.</p>
+                    </div>
+                </div>
+                <div class="step"><strong>6 — Pilot & Scale</strong>
+                    <p class="muted">Phased expansion with documentation.</p>
+                    <div class="more">
+                        <p>Start in a defined pilot region.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACT -->
+        <section id="impact">
+            <h2>Impact Metrics</h2>
+            <div class="counters">
+                <div class="counter">
+                    <div class="big" data-target="1250">0</div>
+                    <div class="small">Cadets Engaged</div>
+                </div>
+                <div class="counter">
+                    <div class="big" data-target="86">0</div>
+                    <div class="small">Communities Reached</div>
+                </div>
+                <div class="counter">
+                    <div class="big" data-target="3940">0</div>
+                    <div class="small">Service Hours</div>
+                </div>
+                <div class="counter">
+                    <div class="big" data-target="120">0</div>
+                    <div class="small">Programs Conducted</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTNERS -->
+        <section id="partners">
+            <h2>Partners & Pilot Region</h2>
+            <div class="partners">
+                <div class="partner">Social Welfare</div>
+                <div class="partner">Education Dept.</div>
+                <div class="partner">District Legal Services</div>
+                <div class="partner">Local NGOs</div>
+                <div class="partner">Community Elders</div>
+            </div>
+            <div id="indiaMap" class="map"></div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section>
+            <h2>Recognition & Stories</h2>
+            <div class="testimonials">
+                <div class="testimonials-track">
+                    <div class="testi">
+                        <strong>Cadet Priya</strong>
+                        <p class="muted">"Volunteering with RUDRA-SETU helped me apply my social work skills
+                            meaningfully."</p>
+                    </div>
+                    <div class="testi">
+                        <strong>Cadet Rohan</strong>
+                        <p class="muted">"RUDRA-SETU helped me turn my NCC training into real community impact."</p>
+                    </div>
+                    <div class="testi">
+                        <strong>Cadet Esha</strong>
+                        <p class="muted">"I discovered new confidence and purpose by serving beyond the parade ground."
+                        </p>
+                    </div>
+                    <!-- duplicate testimonials for smooth looping -->
+                    <div class="testi">
+                        <strong>Cadet Priya</strong>
+                        <p class="muted">"Volunteering with RUDRA-SETU helped me apply my social work skills
+                            meaningfully."</p>
+                    </div>
+                    <div class="testi">
+                        <strong>Cadet Rohan</strong>
+                        <p class="muted">"RUDRA-SETU helped me turn my NCC training into real community impact."</p>
+                    </div>
+                    <div class="testi">
+                        <strong>Cadet Esha</strong>
+                        <p class="muted">"I discovered new confidence and purpose by serving beyond the parade ground."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- GALLERY -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-loop">
+                <div class="gallery-track">
+                    <div class="gallery-item"><img src="/images/IMG-20250911-WA0001.jpg" alt="Cadet Workshop"></div>
+                    <div class="gallery-item"><img src="/images/IMG-20250911-WA0002.jpg" alt="STEM Session"></div>
+                    <div class="gallery-item"><img src="/images/IMG-20250911-WA0003.jpg" alt="Training"></div>
+                    <div class="gallery-item"><img src="/images/IMG-20250911-WA0004.jpg" alt="Community">
+                    </div>
+                    <div class="gallery-item"><img src="/images/IMG-20250911-WA0005.jpg" alt="Cadet Workshop"></div>
+                    <!-- <div class="gallery-item"><img src="/images/IMG-20250911-WA0006.jpg" alt="STEM Session"></div> -->
+                    <div class="gallery-item"><img src="/images/IMG-20250911-WA0007.jpg" alt="Training"></div>
+                    <div class="gallery-item"><img src="/images/IMG-20250911-WA0004.jpg" alt="Community">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Get Involved</h2>
+            <div class="contact">
+                <div>
+                    <p class="muted">Interested in volunteering, partnering, or supporting the initiative? Drop us a
+                        message and
+                        we'll get back within 3–5 working days.</p>
+                    <form id="contactForm">
+                        <input id="name" name="name" placeholder="Full name" required />
+                        <input id="email" name="email" placeholder="Email address" type="email" required />
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your field of interest here"
+                            required></textarea>
+                        <div class="btn-row">
+                            <button id="sendBtn" type="submit">Send Message</button>
+                            <button type="button" class="ghost-btn" onclick="openModal('info')">How it works</button>
+                        </div>
+                    </form>
+                </div>
+                <aside>
+                    <div class="info-card"><strong>Contact</strong>
+                        <p class="muted small">email: info@rudrasetu.org<br />phone: +91 98765 43210</p>
+                    </div>
+                    <div class="info-card"><strong>Volunteer Perks</strong>
+                        <p class="muted small">Certificates, references, training credits, awards.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <footer>
+            © <span id="year"></span> RUDRA-SETU — Unity & Discipline. All rights reserved.
+        </footer>
+
+    </main>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal" onclick="if(event.target.id==='modal') closeModal()">
+        <div class="panel" id="panel"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
